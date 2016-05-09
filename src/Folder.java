@@ -13,6 +13,13 @@ public class Folder
 		this.permissions = 0744;
 	}
 	
+	// constructor
+	public Folder(String name)
+	{
+	   this.name = name;
+	   this.permissions = 0744;
+	}
+	
 	// copy constructor
 	// Note: Does a shallow copy.
 	public Folder(Folder other)

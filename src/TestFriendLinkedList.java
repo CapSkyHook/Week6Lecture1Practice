@@ -22,5 +22,24 @@ public class TestFriendLinkedList
 		System.out.println(lastResult);
 		System.out.println(seventhResult);
 
+		FolderNodeLinkedList myFolders = new FolderNodeLinkedList();
+		myFolders.addInFront(new Folder("hello"));
+		myFolders.addInFront(new Folder("lol"));
+		myFolders.addInFront(new Folder("schola"));
+		myFolders.addInFront(new Folder("jola"));
+		myFolders.addInFront(new Folder("pola"));
+		myFolders.addInFront(new Folder("tola"));
+		myFolders.addInFront(new Folder("bola"));
+		myFolders.addInFront(new Folder("wles"));
+		myFolders.addInFront(new Folder("pez"));
+		myFolders.addInFront(new Folder("sequence"));
+		
+		FolderNode firstResultFolder = myFolders.getFirstNode();
+		FolderNode lastResultFolder = myFolders.getLastNode();
+		FolderNode seventhResultFolder = myFolders.getSeventhNode();
+		System.out.println(firstResult);
+		System.out.println(lastResult);
+		System.out.println(seventhResult);
+
 	}
 }
