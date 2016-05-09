@@ -163,28 +163,12 @@ public class FriendLinkedList
    
    public FriendNode getLastNode()
    {
-      FriendNode finalNode = this.head;
-      for (int i = 1; i < length; i++)
-      {
-         finalNode = this.head.getNext();
-      }
-      
-      return finalNode;
+      return getNodeAtIndex(length -1 );
    }
    
    public FriendNode getSeventhNode()
    {
-      if (length < 7) {
-         return null;
-      }
-      
-      FriendNode finalNode = this.head;
-      for (int i = 1; i < 7; i++)
-      {
-         finalNode = this.head.getNext();
-      }
-      
-      return finalNode;
+      return getNodeAtIndex(7);
    }
    
    
