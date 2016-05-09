@@ -1,7 +1,7 @@
 
 public class FolderNodeLinkedList
 {
-// keeps track of the front of the list
+   // keeps track of the front of the list
    private FolderNode head;
    
    // keeps track of the number of nodes in the list
@@ -71,11 +71,8 @@ public class FolderNodeLinkedList
          return;
       }
 
-      // If we reach here, it means that the list is NOT empty.
-        // So, we adjust the current's next reference such that
-        // the next node following us is where head is pointing to
       current.setNext(head);
-      
+      this.length++;
       // move head to point to our new node
       head = current;
    }
@@ -92,7 +89,7 @@ public class FolderNodeLinkedList
        // traverse the list until either:
        // walker reaches the end of the list; or
        // we've reached client's index of interest.
-       while(walker != null && i < index)
+       while(walker != null && i <= index)
        {
            // reached requested interest  
            // so return the node we're at 
@@ -163,12 +160,13 @@ public class FolderNodeLinkedList
    
    public FolderNode getLastNode()
    {
-      return getNodeAtIndex(length -1 );
+      return getNodeAtIndex(length - 1 );
    }
    
    public FolderNode getSeventhNode()
    {
-      return getNodeAtIndex(7);
+      return getNodeAtIndex(6);
    }
+   
    
 }

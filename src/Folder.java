@@ -32,9 +32,9 @@ public class Folder
 	public String toString()
 	{
 		String result = name + ": " + permissions + "\t";
-		for (int i = 0; i < filenames.length; i++)
-			result += filenames[i] + "\t";
-		result += "\n";
+//		for (int i = 0; i < filenames.length; i++)
+//			result += filenames[i] + "\t";
+//		result += "\n";
 		return result;
 	}
 }

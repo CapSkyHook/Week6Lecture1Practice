@@ -165,7 +165,7 @@ public class FriendLinkedList
    
    public FriendNode getSeventhNode()
    {
-      return getNodeAtIndex(7);
+      return getNodeAtIndex(6);
    }
    
    
